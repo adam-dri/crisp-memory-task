@@ -2,7 +2,7 @@
 utils/display.py — PsychoPy display utilities for the memory task.
 """
 from psychopy import visual, event, core
-from config import SCREEN_SIZE, BACKGROUND_COLOR, TEXT_COLOR, FONT_SIZE
+from config import SCREEN_SIZE, BACKGROUND_COLOR, TEXT_COLOR
 
 
 def create_window() -> visual.Window:

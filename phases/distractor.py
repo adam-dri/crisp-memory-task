@@ -1,7 +1,7 @@
 """
 phases/distractor.py — Distractor phase to clear short-term memory.
 """
-from psychopy import core, event
+from psychopy import event
 from config import DISTRACTOR_DURATION
 from utils.display import create_text_stimulus
 

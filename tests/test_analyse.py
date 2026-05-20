@@ -1,6 +1,3 @@
-import pytest
-import csv
-from pathlib import Path
 from analyse import calculate_metrics
 
 

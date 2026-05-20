@@ -1,4 +1,3 @@
-import pytest
 from phases.recognition import generate_test_pairs
 
 
