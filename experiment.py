@@ -50,6 +50,22 @@ class Experiment:
 
         run_encoding(self.win, self.stimuli)
         run_distractor(self.win, self.language)
+
+        if self.language == "fr":
+            instructions = (
+                "PHASE DE RECONNAISSANCE\n\n"
+                "Appuyez sur Y si la paire est identique.\n"
+                "Appuyez sur N si la paire est recombinée.\n\n"
+                "Appuyez sur ESPACE pour débuter."
+            )
+        else:
+            instructions = (
+                "RECOGNITION PHASE\n\n"
+                "Press Y if the pair is intact.\n"
+                "Press N if the pair is recombined.\n\n"
+                "Press SPACE to begin."
+            )
+        show_text_and_wait(self.win, instructions)
         self.results = run_recognition(self.win, self.stimuli, N_RECOMBINED)
 
     def save_data(self) -> None:
